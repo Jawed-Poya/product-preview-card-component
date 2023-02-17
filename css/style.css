@@ -1,0 +1,122 @@
+@font-face {
+    font-family: fraunces, sans-serif;
+    src: url("../fonts/fraunces.ttf");
+}
+@font-face {
+    font-family: montserrat;
+    src: url("../fonts/montserrat.ttf");
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fs-14: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: fraunces;
+}
+body {
+    background: var(--cream);
+}
+.card {
+    width: 550px;
+    height: 500px;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.card .card-image,
+.card .card-detail {
+    flex-basis: 50%;
+}
+.card .card-image {
+    flex-basis: 50%;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.card .card-detail {
+    padding: 20px;
+}
+.card-detail .card-lead {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue);
+}
+.card-detail .card-detail-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.card-detail .card-detail-title,
+.card-detail .card-detail-text,
+.card-prices {
+    padding-left: 20px;
+}
+.card-detail .card-detail-text {
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--dark-grayish-blue);
+}
+.card-prices {
+    font-size: 32px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-family: montserrat;
+}
+.card-prices .old-price {
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+}
+.card-prices .current-price {
+    color: var(--dark-cyan);
+    font-weight: 600;
+}
+.card button {
+    width: 90%;
+    background-color: var(--dark-cyan);
+    padding: 14px 0;
+    color: var(--white);
+    font-family: fraunces;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.card-designer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-designer a {
+    color: var(--dark-cyan);
+    text-decoration: none;
+}
+@media screen and (max-width: 551px) {
+    .card {
+        width: 80%;
+        height: 680px;
+        flex-direction: column;
+    }
+    .card .card-image {
+        height: 400px;
+        background-position-y: top;
+        background-size: 110%;
+        background-image: url("../images/image-product-mobile.jpg");
+    }
+}
