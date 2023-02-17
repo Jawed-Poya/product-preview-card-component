@@ -27,11 +27,11 @@ body {
     background: var(--cream);
 }
 .card {
-    width: 630px;
-    height: 470px;
+    width: 600px;
+    height: 450px;
     background-color: var(--white);
     margin: auto;
-    border-radius: 15px; 
+    border-radius: 10px; 
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -53,22 +53,22 @@ body {
     padding: 40px;
 }
 .card-detail .card-lead {
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--dark-grayish-blue);
-    margin-top: -10px;
+    margin-top: -15px;
     margin-bottom: 15px;
 }
 .card-detail .card-detail-title {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
     margin: 15px 0;  
     line-height: 35px;
 } 
 .card-detail .card-detail-text {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 25px;
     color: var(--dark-grayish-blue);
 }
 .card-prices {
@@ -95,10 +95,11 @@ body {
     padding: 14px 0;
     color: var(--white);
     font-family: fraunces;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     border-radius: 8px; 
     cursor: pointer;
+    margin-top: 10px;
 }
 .card-designer {
     width: 100%;
@@ -110,7 +111,7 @@ body {
     color: var(--dark-cyan);
     text-decoration: none;
 }
-@media screen and (max-width: 551px) {
+@media screen and (max-width: 631px) {
     .card {
         width: 80%;
         height: 680px;
